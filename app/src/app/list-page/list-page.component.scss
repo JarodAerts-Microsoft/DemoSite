@@ -1,0 +1,76 @@
+@import '../../styles.scss';
+
+h1{
+  font-size: 4em;
+  color: $secondary-dark;
+}
+
+h2{
+  font-size: 2em;
+  color: $secondary-dark;
+}
+
+p{
+  font-size: 1.5em;
+  color: $text-dark;
+}
+
+li{
+  display: block;
+}
+
+#lessBigDiv{
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0%;
+  position: relative;
+}
+
+#teamDiv{
+  color: $text-dark;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  margin: 0 auto;
+  border-spacing: 1em;
+}
+
+tr{
+  font-size: 1.1em;
+  color: $text-dark;
+}
+
+#header{
+  font-size: 2em;
+  color: $secondary-dark;
+}
+
+#viewButton{
+  background-color: $secondary-dark;
+  color: $background-light;
+  font-size: 1.1em;
+  border-radius: 0.5em;
+  border: 0;
+  box-shadow: none;
+  padding: 0.25em;
+}
+
+#viewButton:hover{
+  transform: scale(1.25);
+}
+
+.RedClass{
+  color: Red;
+}
+
+.GreenClass{
+  color: Green;
+}
+
+.BlueClass{
+  color: blue;
+}

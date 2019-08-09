@@ -1,0 +1,29 @@
+<div id="bigDiv" style="text-align:center">
+  <div id="lessBigDiv" style="text-align:center">
+    <h1>
+      Your Customer Reported Incidents
+    </h1>
+    <p>
+      We know that you really love CRIs and there is nothing you would rather start your day with. So below you can find a list of a few you can start with.
+    </p>
+
+    <div id="teamDiv" style="text-align:center">
+      <table>
+          <tr>
+              <th id="header">Id</th>
+              <th id="header">Status</th>
+              <th id="header">Severity</th>
+              <th id="header">Title</th>
+          </tr>
+          <tr *ngFor="let cri of list">
+              <th>{{ cri.id }}</th>
+              <th [ngClass]="{RedClass: cri.status == 'Active', BlueClass: cri.status == 'Mitigated', GreenClass: cri.status == 'Resolved'}">{{ cri.status }}</th>
+              <th [ngClass]="{RedClass: cri.severity == '0' || cri.severity == '1', GreenClass: cri.severity == '4', BlueClass: cri.severity == '3'}">{{ cri.severity }}</th>
+              <th>{{ cri.title }}</th>
+              <th><button id="viewButton">View</button></th>
+          </tr>
+      </table>
+    </div>
+  </div>
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+</div>

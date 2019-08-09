@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+$primary-dark: #E3170A;
+$secondary-dark: #2AB7CA;
+$triary-dark: #4392F1;
+$background-light: #F4F4F8;
+$text-dark: #031927;
+
+body{
+  background-color: $background-light;
+  color: $text-dark;
+  font-family: 'Roboto', sans-serif;
+}
