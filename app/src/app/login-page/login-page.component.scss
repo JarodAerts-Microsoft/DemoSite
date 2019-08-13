@@ -48,5 +48,12 @@ a.button {
   appearance: button;
 
   text-decoration: none;
-  color: initial;
+  background-color: $secondary-dark;
+  color: $background-light;
+  font-size: 2em;
+  border-radius: 1em;
+  border: 0;
+  box-shadow: none;
+  padding: 0.5em;
+  width: 10em;
 }
