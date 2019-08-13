@@ -41,3 +41,12 @@ button{
   padding: 0.5em;
   width: 10em;
 }
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
