@@ -14,6 +14,6 @@ export class ApiServiceService {
   }
 
   public GetListOfMembers(){
-    return this.http.get(this.apiUrl+'GetListOfMembers');
+    return this.http.get('.api/GetListOfMembers');
   }
 }
